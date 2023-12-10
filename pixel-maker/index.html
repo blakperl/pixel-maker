@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="/pixel-maker/style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>PIXEL MAKER</h1>
+        <form  id="sizePicker" >
+           <div class="form">
+            <div>
+                <label  for="Select Height" class="label">Select Height</label>
+                <input type="number"  name="height" min="1" value="1" id="inputHeight" >
+            </div>
+            <div>
+                <label for="Select Width" class="label" >Select Width</label>
+                <input type="number"  name="width" min="1" value="1" id="inputWidth">
+            </div>
+           </div>
+           <input type="submit" id="inputSubmit" class="btn" >
+            <!-- <button type="submit" class="btn"  id="inputSubmit">Submit</button> -->
+        </form>
+        <div class="select">
+            <div>
+                <h2>Select a Color</h2>
+            <input type="color" id="colorPicker">
+            </div>
+            <h4 id="selectedColor"></h4>
+        </div>
+        <h2>Canvas</h2>
+       <p>double click to deselect a color</p>
+       <table id="pixelCanvas"></table>
+
+    
+    </div>
+    <script src="/pixel-maker/script.js"></script>
+</body>
+</html>
